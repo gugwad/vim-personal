@@ -6,6 +6,7 @@ set shiftwidth=4
 set softtabstop=2
 set pastetoggle=<F4>
 set rtp+=~/.vim/bundle/vundle/
+call vundle#begin()
 
 set undofile "helps is undoing even after closing and reopening files"
 set nu
@@ -15,7 +16,6 @@ colorscheme pyte
 syntax enable
 
 
-call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
