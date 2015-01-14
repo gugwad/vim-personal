@@ -1,4 +1,5 @@
-myvim
+Vim Personal Setting
 =====
 
-These are my person vim settings.
+These project contains vimrc file. This vimrc includes personal vim settings
+for web and mobile app development.
