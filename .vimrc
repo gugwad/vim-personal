@@ -5,6 +5,8 @@ set expandtab "expand tab specifies indentation with only spaces
 set shiftwidth=2
 set softtabstop=2
 set pastetoggle=<F4>
+set list listchars=eol:⏎,tab:␉·,trail:␠,space:␠,nbsp:⎵
+set backspace=indent,eol,start
 "
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -16,14 +18,14 @@ set nu
 
 "Color scheme
 syntax enable
-colorscheme kiwi
+" colorscheme kiwi
 "
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
+Plugin 'Yggdroot/indentLine'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -70,7 +72,8 @@ let g:syntastic_check_on_open=1
 " popups
 " can be configured for specific languages
 "
-
+"let g:indentLine_leadingSpaceChar='·'
+"let g:indentLine_leadingSpaceEnabled='1'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
