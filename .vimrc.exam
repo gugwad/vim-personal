@@ -1,0 +1,19 @@
+"be iMproved, required
+set nocompatible
+" required
+filetype off
+" set the autoindentation with spaces
+"expand tab specifies indentation with only spaces
+set expandtab 
+set shiftwidth=2
+set softtabstop=2
+set pastetoggle=<F4>
+set list listchars=eol:⏎,tab:␉·,trail:␠,space:␠,nbsp:⎵
+set backspace=indent,eol,start
+set t_Co=256
+set undofile "helps is undoing even after closing and reopening files"
+set nu
+" required
+filetype plugin indent on
+" To ignore plugin indent changes, instead use:
+" :filetype plugin on
